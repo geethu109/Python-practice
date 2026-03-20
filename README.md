@@ -1,2 +1,2 @@
 # Python-practice
-Collection of Python problems for coding exams and interviews
+This repository contains my practice codes for coding exams and interviews.
