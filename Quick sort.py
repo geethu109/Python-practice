@@ -1,0 +1,21 @@
+# Pick one element called pivot
+# smaller numbers → left side
+# bigger numbers → right side
+# Repeat the same process for left and right parts
+def quick_sort(arr):
+    if len(arr)<=1:
+        return arr
+    else:
+        pivot=arr[0]
+        left=[]
+        right=[]
+        for i in range(1, len(arr)):
+            if arr[i]<=pivot:
+                left.append(arr[i])
+            else:
+                right.append(arr[i])
+        return quick_sort(left) + [pivot] + quick_sort(right)
+
+a=list(map(int, input().split()))
+result=quick_sort(a)
+print(*result)
